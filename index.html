@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main">
+<div class="first">
+    <div class="profile" id="name-pic">
+       <img src="res.jpg" alt="profile " >
+         <div class="name">
+   <h1>Banu priya S</h1> 
+    <h3>Student</h3>
+ 
+    </div>
+    </div>
+ <div class="contact-main reveal">
+      <div class="contact">
+          <h4>CONTACT</h4>
+      </div>
+      <div class="sub">
+    <p> +91 86103 60136</p>
+    <p>banupriyas229@gmail.com</p>
+    <p>No 228 padasalai <br>
+         street
+        kanchipuram</p>
+        </div>
+ </div> 
+ <div class="contact-main reveal">
+      <div class="contact">
+          <h4>SKILLS</h4>
+      </div>
+      <div class="sub">
+      <ul>
+    <li><b>Languages:</b> C, Java</li>
+    <li><b>Web:</b> HTML, CSS, JavaScript</li>
+    <li><b>Time Management</b></li>
+    <li><b>Good Communication</b></li>
+    <li><b>Database:</b> SQL</li>
+</ul>
+</div>
+ </div>
+ 
+ <div class="contact-main reveal">
+      <div class="contact">
+          <h4>CERTIFICATIONS</h4>
+      </div>
+      <div class="sub">
+    <ul>
+        <li>
+            Award <strong>Full Stack Development </strong> <br> Certification
+            from NoviTech Company
+        </li>
+        <li>Finished a <strong>Cyber security </strong>Course in SkillsDA</li>
+        <li>Certified in <strong>HTML 5</strong> by Infosys</li>
+    <li>Certified in <strong>JavaScript</strong> by Infosys</li>
+    </ul>
+    </div>
+ </div>
+ <div class="contact-main reveal">
+      <div class="contact">
+          <h4>  LANGUAGES</h4>
+
+      </div>
+      <div class="sub">
+      <ul>
+        <li>Tamil</li>
+        <li>Kannada</li>
+        <li>English</li>
+      </ul>
+      </div>
+    
+ </div>
+
+ 
+ 
+</div>
+<div class="second">
+
+
+
+
+    <div class="About reveal">
+        <div class="aboutme"><h4>ABOUT ME </h4></div>
+        <p style="margin-top: 20px;">Enthusiastic and detail-oriented Computer Science Engineering student with a strong foundation in programming. Skilled in Java, Python, HTML/CSS, JavaScript and problem-solving through real-world projects and academic coursework. Eager to apply technical knowledge and passion for learning in an innovative and growth-oriented environmen</p>
+    </div>
+    <div class="Education-main reveal">
+      <div class="Education">
+          <h4>EDUCATION</h4>
+          
+      </div>
+       <p><b>BACHELORE OF ENGINEERING IN COMPUTER SCIENCE AND ENGINEERING</b></p>
+       <p>JEPPIAAR INSTITUTE OF TECHNOLOGY</p>
+       <p>CGPA:8.58</p>
+       <p>2023 - Present</p>
+
+       <p> <b>HSC</b></p>
+       <p>SACRED HEART GIRLS PU COLLEGE ,BANGLORE</p>
+       <p>Percentage:87.88</p>
+       <p>2022-2023</p>
+
+       <p><b>SSLC</b></p>
+       <p>SACRED HEART GIRLS HIGH SCHOOL, BANGLORE</p>
+       <p>Percentage:84.54</p>
+       <p>2022-2023</p>
+
+    
+ 
+</div>
+
+<div class="Education-main reveal">
+    <div class="Education">
+        <h4> PRACTICE PROJECT</h4>
+    </div>
+
+     <ul>
+        <li><b>Book sky</b></li>
+        <p>Designed a web page to add  book titles with author names and short description.Enabled dynamical</p>
+        <li><b>Developed a Habbit Recorder Calender</b></li>
+        <p> Designed a web recorder to record the the habbit it will take the habbit and show the date in which the habbit is completed</p>
+        <li> <b> Menu Card</b></li>
+        <p>Designed page of menu card with food items and the need to search the item </p>
+     </ul>
+
+
+    </div>
+
+</div> 
+
+<script>
+// JavaScript to reveal elements on scroll
+const elements = document.getElementsByClassName('.reveal');
+
+const revealOnScroll = () => {
+    const windowHeight = window.innerHeight;
+
+    elements.forEach(el => {
+        const elementTop = el.getBoundingClientRect().top;
+
+        if (elementTop < windowHeight - 100) {
+            el.classList.add('active');
+        }
+    });
+};
+
+window.addEventListener('scroll', revealOnScroll);
+window.addEventListener('load', revealOnScroll);
+const image=document.getElementById("name-pic") ;
+setInterval(() =>{if (image.style.visibility === "hidden") {
+      image.style.visibility = "visible";
+    } else {
+      image.style.visibility = "hidden";
+    }
+  }, 500
+);
+
+</script>
+</body>
+</html>
