@@ -12,7 +12,7 @@
 .first{
     background-color:rgb(21, 46, 46);
     width: 300px;
-    height: 1100px;
+    height: 1123px;
      opacity: 0;
   transform: translateY(-40px);
   animation: fadeInSlide 4s ease-out forwards;
@@ -175,6 +175,7 @@ li{
 
 
  
+
 
 
 
